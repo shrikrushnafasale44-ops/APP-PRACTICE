@@ -1,0 +1,19 @@
+class Car:
+    def drive(self):
+        print("Car is driving")
+
+
+class Bike:
+    def drive(self):
+        print("Bike is driving")
+
+
+def vehicle_factory(choice):
+    if choice == "car":
+        return Car()
+    elif choice == "bike":
+        return Bike()
+
+
+vehicle = vehicle_factory("car")
+vehicle.drive()
